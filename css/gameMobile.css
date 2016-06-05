@@ -1,0 +1,134 @@
+body{
+  cursor: normal;
+  zoom: 2.6;
+}
+.beat{
+  width: 200px;
+  height: 300px;
+  background: url("../images/papay.jpg") no-repeat center;
+  background-size: contain;
+  position: relative;
+  margin-top: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  z-index: 1;
+}
+.something
+p{
+  font-size: 1.5em;
+  width: auto;
+  max-width: 400px;
+  margin: 30px auto;
+}
+.target{
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -10px;
+  width: 20px;
+  height: 20px;
+}
+.hummer{
+  height: 320px;
+  width: 260px;
+  position: absolute;
+  top: -196px;
+  left: 45px;
+  background: url("../images/hummer.png") no-repeat center;
+  background-size: contain;
+  z-index: 10;
+  transform: rotate(-32deg);
+  animation-name: spin;
+  /* animation-duration: 200ms;
+   animation-iteration-count: infinite;
+   animation-timing-function: linear;
+   animation-direction: alternate-reverse;
+   */
+
+
+}
+@-o-keyframes spin{
+  from { -ms-transform: rotate(45deg); }
+  to { -ms-transform: rotate(-32deg); }
+}
+@-ms-keyframes spin {
+    from { -ms-transform: rotate(45deg); }
+    to { -ms-transform: rotate(-32deg); }
+}
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(45deg); }
+    to { -moz-transform: rotate(-32deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(45deg); }
+    to { -webkit-transform: rotate(-32deg); }
+}
+@keyframes spin {
+    from {
+        transform:rotate(45deg);
+    }
+    to {
+        transform:rotate(-32deg);
+    }
+}
+.pointer{
+
+  position: absolute;
+  left: 28px;
+  top: 147px;
+
+
+  width: 20px;
+  height: 20px;
+}
+#cry{
+  display: none;
+  position: absolute;
+  top: 110px;
+  left:50px;
+  width: 100px;
+  height: 80px;
+  margin-left: -25px;
+  background: url("../images/mouth.jpg") no-repeat center;
+  background-size: contain;
+}
+.tears{
+  display: none;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  background: url("../images/tears.png") no-repeat center;
+  background-size: contain;
+}
+.tears1{
+  top:85px;
+  left: -6px;
+  transform: rotate(40deg);
+}
+.tears2{
+  top: 85px;
+  right: 35px;
+  transform: rotate(-40deg);
+}
+
+#win{
+  margin: 0 auto;
+  text-align: center;
+  display: none;
+}
+#win h1{
+  font-size: 3em;
+  color: red;
+}
+#smile{
+  display: none;
+  position: absolute;
+  top: 110px;
+  left:59px;
+  width: 90px;
+  height: 70px;
+  margin-left: -25px;
+  background: url("../images/smile.png") no-repeat center;
+  background-size: contain;
+}
